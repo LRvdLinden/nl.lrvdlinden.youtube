@@ -1,0 +1,62 @@
+{
+  "id": "nl.lrvdlinden.youtube",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": ["local"],
+  "brandColor": "#f80101",
+  "name": {
+    "en": "YouTube",
+    "nl": "YouTube"
+  },
+  "images": {
+    "xlarge": "/assets/images/xlarge.jpg",
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "description": {
+    "en": "Receive notifications for new YoutTube video's",
+    "nl": "Ontvang meldingen voor nieuwe YouTube video's"
+  },
+  "category": "internet",
+  "class": "rss",
+  "tags": {
+    "en": ["internet", "news", "nos", "nu.nl", "rss", "feed", "video", "youtube"],
+    "nl": ["internet", "nieuws", "nos", "nu.nl", "rss", "feed", "video", "youtube"]
+  },
+  "language": {
+    "en": "en",
+    "nl": "nl"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Léon van der Linden",
+    "email": "homey@vdlinden.xyz"
+  },
+  "contributors": {
+    "translators": [
+      {
+        "name": "🇬🇧 Léon"
+      },
+      {
+        "name": "🇳🇱 Léon"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "lrvdlinden"
+      },
+      "bunq": {
+        "username": "lrvdlinden"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/app-pro-youtube-for-homey/86692"
+  },
+  "homepage": "https://shor.by/LRvdLinden",
+  "support": "https://community.homey.app/t/app-pro-youtube-for-homey/86692",
+  "homeyCommunityTopicId": 86692
+}
