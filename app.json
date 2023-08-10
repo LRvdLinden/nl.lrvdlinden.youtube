@@ -1,0 +1,373 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.lrvdlinden.youtube",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "brandColor": "#f80101",
+  "name": {
+    "en": "YouTube",
+    "nl": "YouTube"
+  },
+  "images": {
+    "xlarge": "/assets/images/xlarge.jpg",
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "description": {
+    "en": "Receive notifications for new YoutTube video's",
+    "nl": "Ontvang meldingen voor nieuwe YouTube video's"
+  },
+  "category": "internet",
+  "class": "rss",
+  "tags": {
+    "en": [
+      "internet",
+      "news",
+      "nos",
+      "nu.nl",
+      "rss",
+      "feed",
+      "video",
+      "youtube"
+    ],
+    "nl": [
+      "internet",
+      "nieuws",
+      "nos",
+      "nu.nl",
+      "rss",
+      "feed",
+      "video",
+      "youtube"
+    ]
+  },
+  "language": {
+    "en": "en",
+    "nl": "nl"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Léon van der Linden",
+    "email": "homey@vdlinden.xyz"
+  },
+  "contributors": {
+    "translators": [
+      {
+        "name": "🇬🇧 Léon"
+      },
+      {
+        "name": "🇳🇱 Léon"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "lrvdlinden"
+      },
+      "bunq": {
+        "username": "lrvdlinden"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/app-pro-youtube-for-homey/86692"
+  },
+  "homepage": "https://shor.by/LRvdLinden",
+  "support": "https://community.homey.app/t/app-pro-youtube-for-homey/86692",
+  "homeyCommunityTopicId": 86692,
+  "flow": {
+    "triggers": [
+      {
+        "id": "new_article",
+        "title": {
+          "en": "New video Received",
+          "nl": "Nieuwe video ontvangen",
+          "de": "Neues Video empfangen",
+          "fr": "Nouvelle vidéo reçue",
+          "it": "Nuovo video ricevuto",
+          "sv": "Ny video mottagen",
+          "no": "Ny video mottatt",
+          "es": "Nuevo video recibido",
+          "da": "Ny video modtaget",
+          "ru": "Получено новое видео",
+          "pl": "Nowe wideo otrzymane"
+        },
+        "description": {
+          "en": "Triggered when a new video is received from a YouTube channel.",
+          "nl": "Geactiveerd wanneer een nieuwe video wordt ontvangen van een YouTube-kanaal.",
+          "de": "Ausgelöst, wenn ein neues Video von einem YouTube-Kanal empfangen wird.",
+          "fr": "Déclenché lorsqu'une nouvelle vidéo est reçue depuis une chaîne YouTube.",
+          "it": "Attivato quando un nuovo video viene ricevuto da un canale YouTube.",
+          "sv": "Aktiveras när en ny video tas emot från en YouTube-kanal.",
+          "no": "Utløst når en ny video mottas fra en YouTube-kanal.",
+          "es": "Activado cuando se recibe un nuevo video de un canal de YouTube.",
+          "da": "Udløst, når en ny video modtages fra en YouTube-kanal.",
+          "ru": "Срабатывает, когда поступает новое видео с канала YouTube.",
+          "pl": "Wyzwalane, gdy nowe wideo zostanie odebrane z kanału YouTube."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=yt"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "title",
+            "title": {
+              "en": "Video Title",
+              "nl": "Video Titel",
+              "de": "Video Titel",
+              "fr": "Titre de la vidéo",
+              "it": "Titolo del video",
+              "sv": "Videotitel",
+              "no": "Videotittel",
+              "es": "Título del video",
+              "da": "Video titel",
+              "ru": "Заголовок видео",
+              "pl": "Tytuł wideo"
+            },
+            "type": "string"
+          },
+          {
+            "name": "link",
+            "title": {
+              "en": "Video URL",
+              "nl": "Video URL",
+              "de": "Video-URL",
+              "fr": "URL de la vidéo",
+              "it": "URL del video",
+              "sv": "Video-URL",
+              "no": "Video-URL",
+              "es": "URL del video",
+              "da": "Video-URL",
+              "ru": "URL видео",
+              "pl": "URL wideo"
+            },
+            "type": "string"
+          },
+          {
+            "name": "pubDate",
+            "title": {
+              "en": "Video Publication Date",
+              "nl": "Video Publicatiedatum",
+              "de": "Video Veröffentlichungsdatum",
+              "fr": "Date de publication de la vidéo",
+              "it": "Data di pubblicazione del video",
+              "sv": "Video Publiceringsdatum",
+              "no": "Video Publikasjonsdato",
+              "es": "Fecha de publicación del video",
+              "da": "Video Udgivelsesdato",
+              "ru": "Дата публикации видео",
+              "pl": "Data publikacji wideo"
+            },
+            "type": "string"
+          },
+          {
+            "name": "imageUrl",
+            "title": {
+              "en": "Image URL",
+              "nl": "Afbeelding URL",
+              "de": "Bild-URL",
+              "fr": "URL de l'image",
+              "it": "URL dell'immagine",
+              "sv": "Bild-URL",
+              "no": "Bilde-URL",
+              "es": "URL de la imagen",
+              "da": "Billede URL",
+              "ru": "URL изображения",
+              "pl": "URL obrazu"
+            },
+            "type": "string"
+          },
+          {
+            "name": "image",
+            "title": {
+              "en": "Image URL",
+              "nl": "Afbeelding URL",
+              "de": "Bild-URL",
+              "fr": "URL de l'image",
+              "it": "URL dell'immagine",
+              "sv": "Bild-URL",
+              "no": "Bilde-URL",
+              "es": "URL de la imagen",
+              "da": "Billede URL",
+              "ru": "URL изображения",
+              "pl": "URL obrazu"
+            },
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "YouTube",
+        "nl": "YouTube",
+        "pl": "YouTube",
+        "de": "YouTube",
+        "fr": "YouTube",
+        "it": "YouTube",
+        "sv": "YouTube",
+        "no": "YouTube",
+        "es": "YouTube",
+        "da": "YouTube",
+        "ru": "YouTube"
+      },
+      "class": "other",
+      "capabilities": [],
+      "pair": [
+        {
+          "id": "feedUrl",
+          "options": {
+            "title": {
+              "en": "Fill in your Channel id and name",
+              "nl": "Vul uw Kanaal id en naam in",
+              "pl": "Wypełnij identyfikatora kanału",
+              "de": "Füllen Sie Ihre Kanal-ID und Ihren Namen aus",
+              "fr": "Remplissez votre d'identifiant de chaîne et le nom",
+              "it": "Inserisci dell'ID del canale e il nome",
+              "sv": "Fyll i din kanalid och namn",
+              "no": "Fyll in ttil kanal-IDen og navnet ditt",
+              "es": "Complete su de identificación de canal y nombre",
+              "da": "Udfyld din Kanal id og navn",
+              "ru": "Заполните и идентификатор канала"
+            },
+            "buttonLabel": {
+              "en": "Next",
+              "nl": "Volgende",
+              "pl": "Dalej",
+              "de": "Weiter",
+              "fr": "Suivant",
+              "it": "Avanti",
+              "sv": "Nästa",
+              "no": "Neste",
+              "es": "Siguiente",
+              "da": "Næste",
+              "ru": "Далее"
+            },
+            "usernameLabel": {
+              "en": "Channel name",
+              "nl": "Kanaalnaam",
+              "pl": "Nazwa kanału",
+              "de": "Kanalname",
+              "fr": "Nom de la chaîne",
+              "it": "Nome del canale",
+              "sv": "Kanalnamn",
+              "no": "Kanalnavn",
+              "es": "Nombre del canal",
+              "da": "Kanalnavn",
+              "ru": "Имя канала"
+            },
+            "usernamePlaceholder": {
+              "en": "My Youtube channel",
+              "nl": "Mijn Youtube-kanaal",
+              "pl": "Mój kanał na Youtube",
+              "de": "Mein Youtube-Kanal",
+              "fr": "Ma chaîne Youtube",
+              "it": "Il mio canale Youtube",
+              "sv": "Min Youtube-kanal",
+              "no": "Min Youtube-kanal",
+              "es": "Mi canal de Youtube",
+              "da": "Mit Youtube-kanal",
+              "ru": "Мой канал на Youtube"
+            },
+            "passwordLabel": {
+              "en": "Channel id",
+              "nl": "Kanaal id",
+              "pl": "Identyfikator kanału",
+              "de": "Kanal-ID",
+              "fr": "Identifiant de chaîne",
+              "it": "ID canale",
+              "sv": "Kanal-id",
+              "no": "Kanal-ID",
+              "es": "ID de canal",
+              "da": "Kanal id",
+              "ru": "Идентификатор канала"
+            },
+            "passwordPlaceholder": {
+              "en": "UCYCS1EUvw41eG3U12qY68XQ",
+              "nl": "UCYCS1EUvw41eG3U12qY68XQ",
+              "pl": "UCYCS1EUvw41eG3U12qY68XQ",
+              "de": "UCYCS1EUvw41eG3U12qY68XQ",
+              "fr": "UCYCS1EUvw41eG3U12qY68XQ",
+              "it": "UCYCS1EUvw41eG3U12qY68XQ",
+              "sv": "UCYCS1EUvw41eG3U12qY68XQ",
+              "no": "UCYCS1EUvw41eG3U12qY68XQ",
+              "es": "UCYCS1EUvw41eG3U12qY68XQ",
+              "da": "UCYCS1EUvw41eG3U12qY68XQ",
+              "ru": "UCYCS1EUvw41eG3U12qY68XQ"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/yt/assets/images/small.jpg",
+        "large": "/drivers/yt/assets/images/large.jpg"
+      },
+      "energy": {},
+      "id": "yt",
+      "settings": [
+        {
+          "id": "feedUrl",
+          "type": "text",
+          "value": "",
+          "label": {
+            "en": "Youtube Kanaal id",
+            "nl": "Youtube Kanaal id",
+            "pl": "Identyfikator kanału Youtube",
+            "de": "Youtube Kanal-ID",
+            "fr": "Identifiant de chaîne Youtube",
+            "it": "ID canale Youtube",
+            "sv": "Youtube-kanal-id",
+            "no": "Youtube-kanal-ID",
+            "es": "ID de canal de Youtube",
+            "da": "Youtube Kanal id",
+            "ru": "Идентификатор канала Youtube"
+          },
+          "placeholder": {
+            "en": "Enter the desired Kanaal ID here, e.g. UCYCS1EUvw41eG3U12qY68XQ",
+            "nl": "Voer hier de gewenste Channel ID in, bijv. UCYCS1EUvw41eG3U12qY68XQ",
+            "pl": "Wprowadź tutaj pożądane ID kanału, np. UCYCS1EUvw41eG3U12qY68XQ",
+            "de": "Geben Sie hier die gewünschte Kanal-ID ein, z.B. UCYCS1EUvw41eG3U12qY68XQ",
+            "fr": "Entrez l'identifiant de chaîne souhaité ici, par exemple UCYCS1EUvw41eG3U12qY68XQ",
+            "it": "Inserisci qui l'ID del canale desiderato, ad esempio UCYCS1EUvw41eG3U12qY68XQ",
+            "sv": "Ange önskat kanal-ID här, t.ex. UCYCS1EUvw41eG3U12qY68XQ",
+            "no": "Skriv inn ønsket kanal-ID her, f.eks. UCYCS1EUvw41eG3U12qY68XQ",
+            "es": "Introduce el ID del canal deseado aquí, p. ej. UCYCS1EUvw41eG3U12qY68XQ",
+            "da": "Indtast det ønskede kanal-ID her, f.eks. UCYCS1EUvw41eG3U12qY68XQ",
+            "ru": "Введите желаемый идентификатор канала здесь, например UCYCS1EUvw41eG3U12qY68XQ"
+          }
+        }
+      ]
+    }
+  ]
+}

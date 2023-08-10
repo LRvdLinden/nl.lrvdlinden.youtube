@@ -1,0 +1,124 @@
+{
+  "name": {
+    "en": "YouTube",
+    "nl": "YouTube",
+    "pl": "YouTube",
+    "de": "YouTube",
+    "fr": "YouTube",
+    "it": "YouTube",
+    "sv": "YouTube",
+    "no": "YouTube",
+    "es": "YouTube",
+    "da": "YouTube",
+    "ru": "YouTube"
+  },
+  "class": "other",
+  "capabilities": [],
+  "pair": [
+    {
+      "id": "feedUrl",
+      "options": {
+        "title": {
+          "en": "Fill in your Channel id and name",
+          "nl": "Vul uw Kanaal id en naam in",
+          "pl": "Wypełnij identyfikatora kanału",
+          "de": "Füllen Sie Ihre Kanal-ID und Ihren Namen aus",
+          "fr": "Remplissez votre d'identifiant de chaîne et le nom",
+          "it": "Inserisci dell'ID del canale e il nome",
+          "sv": "Fyll i din kanalid och namn",
+          "no": "Fyll in ttil kanal-IDen og navnet ditt",
+          "es": "Complete su de identificación de canal y nombre",
+          "da": "Udfyld din Kanal id og navn",
+          "ru": "Заполните и идентификатор канала"
+        },
+        "buttonLabel": {
+          "en": "Next",
+          "nl": "Volgende",
+          "pl": "Dalej",
+          "de": "Weiter",
+          "fr": "Suivant",
+          "it": "Avanti",
+          "sv": "Nästa",
+          "no": "Neste",
+          "es": "Siguiente",
+          "da": "Næste",
+          "ru": "Далее"
+        },
+        "usernameLabel": {
+          "en": "Channel name",
+          "nl": "Kanaalnaam",
+          "pl": "Nazwa kanału",
+          "de": "Kanalname",
+          "fr": "Nom de la chaîne",
+          "it": "Nome del canale",
+          "sv": "Kanalnamn",
+          "no": "Kanalnavn",
+          "es": "Nombre del canal",
+          "da": "Kanalnavn",
+          "ru": "Имя канала"
+        },
+        "usernamePlaceholder": {
+          "en": "My Youtube channel",
+          "nl": "Mijn Youtube-kanaal",
+          "pl": "Mój kanał na Youtube",
+          "de": "Mein Youtube-Kanal",
+          "fr": "Ma chaîne Youtube",
+          "it": "Il mio canale Youtube",
+          "sv": "Min Youtube-kanal",
+          "no": "Min Youtube-kanal",
+          "es": "Mi canal de Youtube",
+          "da": "Mit Youtube-kanal",
+          "ru": "Мой канал на Youtube"
+        },
+        "passwordLabel": {
+          "en": "Channel id",
+          "nl": "Kanaal id",
+          "pl": "Identyfikator kanału",
+          "de": "Kanal-ID",
+          "fr": "Identifiant de chaîne",
+          "it": "ID canale",
+          "sv": "Kanal-id",
+          "no": "Kanal-ID",
+          "es": "ID de canal",
+          "da": "Kanal id",
+          "ru": "Идентификатор канала"
+        },
+        "passwordPlaceholder": {
+          "en": "UCYCS1EUvw41eG3U12qY68XQ",
+          "nl": "UCYCS1EUvw41eG3U12qY68XQ",
+          "pl": "UCYCS1EUvw41eG3U12qY68XQ",
+          "de": "UCYCS1EUvw41eG3U12qY68XQ",
+          "fr": "UCYCS1EUvw41eG3U12qY68XQ",
+          "it": "UCYCS1EUvw41eG3U12qY68XQ",
+          "sv": "UCYCS1EUvw41eG3U12qY68XQ",
+          "no": "UCYCS1EUvw41eG3U12qY68XQ",
+          "es": "UCYCS1EUvw41eG3U12qY68XQ",
+          "da": "UCYCS1EUvw41eG3U12qY68XQ",
+          "ru": "UCYCS1EUvw41eG3U12qY68XQ"
+        }
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "cloud"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.jpg",
+    "large": "{{driverAssetsPath}}/images/large.jpg"
+  },
+  "energy": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "nl.lrvdlinden.youtube",
+  "version": "1.0.0",
+  "description": "Youtube for Homey",
+  "author": "homey@vdlinden.xyz",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "nl.lrvdlinden.youtube"
+  },
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "rss-parser": "^3.13.0"
+  }
+}

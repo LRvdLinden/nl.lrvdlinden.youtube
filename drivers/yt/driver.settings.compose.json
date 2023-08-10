@@ -1,0 +1,34 @@
+[
+	{
+	  "id": "feedUrl",
+	  "type": "text",
+	  "value": "",
+	  "label": {
+		"en": "Youtube Kanaal id",
+		"nl": "Youtube Kanaal id",
+		"pl": "Identyfikator kanału Youtube",
+		"de": "Youtube Kanal-ID",
+		"fr": "Identifiant de chaîne Youtube",
+		"it": "ID canale Youtube",
+		"sv": "Youtube-kanal-id",
+		"no": "Youtube-kanal-ID",
+		"es": "ID de canal de Youtube",
+		"da": "Youtube Kanal id",
+		"ru": "Идентификатор канала Youtube"
+	  },
+	  "placeholder": {
+		"en": "Enter the desired Kanaal ID here, e.g. UCYCS1EUvw41eG3U12qY68XQ",
+		"nl": "Voer hier de gewenste Channel ID in, bijv. UCYCS1EUvw41eG3U12qY68XQ",
+		"pl": "Wprowadź tutaj pożądane ID kanału, np. UCYCS1EUvw41eG3U12qY68XQ",
+		"de": "Geben Sie hier die gewünschte Kanal-ID ein, z.B. UCYCS1EUvw41eG3U12qY68XQ",
+		"fr": "Entrez l'identifiant de chaîne souhaité ici, par exemple UCYCS1EUvw41eG3U12qY68XQ",
+		"it": "Inserisci qui l'ID del canale desiderato, ad esempio UCYCS1EUvw41eG3U12qY68XQ",
+		"sv": "Ange önskat kanal-ID här, t.ex. UCYCS1EUvw41eG3U12qY68XQ",
+		"no": "Skriv inn ønsket kanal-ID her, f.eks. UCYCS1EUvw41eG3U12qY68XQ",
+		"es": "Introduce el ID del canal deseado aquí, p. ej. UCYCS1EUvw41eG3U12qY68XQ",
+		"da": "Indtast det ønskede kanal-ID her, f.eks. UCYCS1EUvw41eG3U12qY68XQ",
+		"ru": "Введите желаемый идентификатор канала здесь, например UCYCS1EUvw41eG3U12qY68XQ"
+	  }
+	}
+  ]
+  
